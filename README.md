@@ -15,4 +15,4 @@ MakeItEasy is a library for making your code more easy. You access it various fu
   <script src="https://rakeshkanna-rk.github.io/MakeItEasy/js/EasyCDN.js"></script>
   ```
 
-  [Convert Your Tags to Json]("https://rakeshkanna-rk.github.io/MakeItEasy/js/web/TagToJson.html)
+  [Convert Your Tags To JSON](https://rakeshkanna-rk.github.io/MakeItEasy/js/web/TagToJson.html)
