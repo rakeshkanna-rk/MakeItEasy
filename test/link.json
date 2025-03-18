@@ -2,5 +2,6 @@
   "css": [
     "https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css",
     "test.css"
-  ]
+  ],
+  "js": ["test.js"]
 }
