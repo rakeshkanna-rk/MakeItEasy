@@ -1,4 +1,4 @@
-function EasyCDN(jsonPath) {
+function EasyCDN(jsonPath, jsDiffer=false) {
   fetch(jsonPath)
     .then(response => {
       if (!response.ok) throw new Error(`Failed to fetch ${jsonPath}`);
@@ -16,7 +16,7 @@ function EasyCDN(jsonPath) {
       js.forEach(src => {
         const script = document.createElement("script");
         script.src = src;
-        script.defer = true;
+        script.defer = jsDiffer;
         document.body.appendChild(script);
         console.log(`Loaded JS: ${src}`);
       });
