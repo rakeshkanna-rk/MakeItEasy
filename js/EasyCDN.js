@@ -1,4 +1,4 @@
-function EasyCDN(jsonPath, attachToHead = false, callback = null) {
+function EasyCDN(jsonPath, addLogMsg = "Loaded: ", attachToHead = false, callback = null) {
   fetch(jsonPath)
     .then((res) => res.json())
     .then((data) => {
@@ -6,7 +6,7 @@ function EasyCDN(jsonPath, attachToHead = false, callback = null) {
       let loadedFiles = 0;
 
       function checkAllLoaded(fileUrl) {
-        console.log("Loaded: " + fileUrl);
+        console.log(addLogMsg + fileUrl);
         loadedFiles++;
         if (loadedFiles === totalFiles && typeof callback === "function") {
           callback();
